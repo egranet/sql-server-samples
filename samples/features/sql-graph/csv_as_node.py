@@ -7,7 +7,7 @@ def main(input_file_path, schema, table):
     # create the output file in the same directory as the input file
     output_file_path = os.path.splitext(input_file_path)[0] + '_as_node' + '.csv'
 
-    # you may have to change the encoding 
+    # run the Linux command "file -i file.csv" to know the encoding of your file on Linux 
     with open(input_file_path, mode='r', encoding = 'utf-16le', newline='') as input_file, \
     open(output_file_path, mode='w', encoding = 'utf-16le', newline='') as output_file:
     
